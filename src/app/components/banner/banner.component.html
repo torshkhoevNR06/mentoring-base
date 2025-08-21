@@ -1,0 +1,6 @@
+<button class="glow-on-hover" type="button" (click)="isShowBanner = !isShowBanner">
+	Скрыть/Показать банер
+</button>
+<div class="header__banner">
+	<img src="../assets/image/Banner.svg" alt="Banner" *ngIf="isShowBanner">
+</div>
