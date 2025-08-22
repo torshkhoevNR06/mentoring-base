@@ -4,14 +4,14 @@ import { RouterLink, RouterOutlet } from '@angular/router';
 import { NgFor, NgIf } from '@angular/common';
 
 @Component({
-  selector: 'app-main',
+  selector: 'app-layout-footer',
   standalone: true,
   imports: [NgFor, NgIf, RouterLink, RouterOutlet, AppComponent],
-  templateUrl: './main.component.html',
-  styleUrl: './main.component.scss'
+  templateUrl: './footer.component.html',
+  styleUrl: './footer.component.scss'
 })
-export class MainComponent {
-	readonly headerNavA1 = 'Главная';
+export class FooterComponent {
+readonly headerNavA1 = 'Главная';
 	readonly headerNavA3 = 'Каталог';
 	readonly headerIineNavButton1 = upperCaseMenuItems[0];
 	readonly newPages = newPages;

@@ -1,17 +1,16 @@
 import { NgFor, NgIf } from '@angular/common';
 import { Component } from '@angular/core';
 import { RouterLink, RouterOutlet } from '@angular/router';
-import { UsersListComponent } from '../users-list/users-list.component';
-
+import { AppComponent } from '../../app.component';
 
 @Component({
-	selector: 'app-header',
+	selector: 'app-layout-home',
 	standalone: true,
-	imports: [RouterLink, RouterOutlet, NgFor, NgIf],
-	templateUrl: './header.component.html',
-	styleUrl: './header.component.scss'
+	imports: [NgFor, NgIf, RouterLink, RouterOutlet, AppComponent],
+	templateUrl: './home.component.html',
+	styleUrl: './home.component.scss'
 })
-export class HeaderComponent {
+export class HomeComponent {
 	readonly headerNavA1 = 'Главная';
 	readonly headerNavA3 = 'Каталог';
 	readonly headerIineNavButton1 = upperCaseMenuItems[0];

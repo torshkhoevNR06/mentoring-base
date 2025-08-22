@@ -3,7 +3,7 @@ import { HttpClient } from "@angular/common/http";
 import { Component, inject } from "@angular/core";
 import { RouterOutlet } from "@angular/router";
 import { User } from './users-list.interface';
-import { HeaderComponent } from "../header/header.component";
+import { HeaderComponent } from "../layout/header.component";
 
 @Component({
 	selector: 'app-users-list',

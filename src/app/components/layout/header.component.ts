@@ -1,17 +1,17 @@
-import { Component } from '@angular/core';
-import { AppComponent } from '../../app.component';
-import { RouterLink, RouterOutlet } from '@angular/router';
 import { NgFor, NgIf } from '@angular/common';
+import { Component } from '@angular/core';
+import { RouterLink, RouterOutlet } from '@angular/router';
+
 
 @Component({
-  selector: 'app-footer',
-  standalone: true,
-  imports: [NgFor, NgIf, RouterLink, RouterOutlet, AppComponent],
-  templateUrl: './footer.component.html',
-  styleUrl: './footer.component.scss'
+	selector: 'app-layout-header',
+	standalone: true,
+	imports: [RouterLink, RouterOutlet, NgFor, NgIf],
+	templateUrl: './header.component.html',
+	styleUrl: './header.component.scss'
 })
-export class FooterComponent {
-readonly headerNavA1 = 'Главная';
+export class HeaderComponent {
+	readonly headerNavA1 = 'Главная';
 	readonly headerNavA3 = 'Каталог';
 	readonly headerIineNavButton1 = upperCaseMenuItems[0];
 	readonly newPages = newPages;
