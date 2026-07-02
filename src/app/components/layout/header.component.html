@@ -1,0 +1,105 @@
+<div class="header">
+	<div class="container-1">
+		<div class="header__left">
+			<div class="header__nav-logo">
+				<a href="#">
+					<img src="../assets/image/Frame.svg" alt="Frame">
+				</a>
+			</div>
+			<nav class="header__nav">
+				<div class="header__nav-item">
+					<a class="header__nav-link link__duplicate" routerLink="/" (click)="onClick($event)">
+						<span>{{headerNavA1}}</span>
+					</a>
+				</div>
+				<div class="header__nav-item">
+					<a class="header__nav-link link__duplicate" href="#">
+						<span>{{aboutCompany}}</span>
+					</a>
+				</div>
+				<div class="header__nav-item">
+					<a class="header__nav-link link__duplicate" href="#" *ngIf="isShowCotalog">
+						<span>{{headerNavA3}}</span>
+					</a>
+				</div>
+				<button class="glow-on-hover" type="button" (click)="isShowCotalog = !isShowCotalog">
+					Скрыть/Показать каталог
+				</button>
+				<button class="glow-on-hover" type="button" (click)="changeMenuText()">
+					Текст
+				</button>
+				<button class="glow-on-hover" routerLink="/users" (click)="onClick($event)">
+					Админка
+				</button>
+			</nav>
+		</div>
+
+		<div class="header__right">
+			<div class="header__supportbynumber">
+				<div class="header__phone">
+					<img src="../assets/image/Phone.svg" alt="Phone">
+				</div>
+				<div class="header__number">
+					<a class="link__duplicate" href="tel:+79650842929">
+						+7 (965) 084-29-29
+					</a>
+				</div>
+				<div class="header__heart">
+					<img src="../assets/image/Heart.svg" alt="Heart">
+				</div>
+			</div>
+			<a class="link__duplicate" href="#">
+				<div class="header__basket">
+					<div class="header__maskgroup">
+						<img src="../assets/image/Mask group.svg" alt="Mask group">
+					</div>
+					<div class="header__text">
+						<a class="header__text-link link__duplicate" href="#">
+							Пусто
+						</a>
+					</div>
+				</div>
+			</a>
+		</div>
+	</div>
+
+	<div class="header__line">
+		<div class="container-2">
+			<div class="header__line-catalog">
+				<div class="header__line-light">
+					<a href="#" class="link__duplicate"><img class="header__line-img-light" src="../assets/image/light.svg"
+							alt="light">
+					</a>
+				</div>
+				<div class="header__line-nav">
+					<div class="header__line-nav-item">
+						<button type="button" href="#" class="button header__line-nav-button" *ngFor="let item of menuItems">
+							{{item}}
+						</button>
+					</div>
+				</div>
+			</div>
+			<div class="header__line-search">
+				<div class="header__line-search-for-products">
+					<div class="header__line-product-1">
+						<input class="header__line-product-item-1" name="Search" type="text"
+							placeholder="Поиск, например Круг зачистной">
+						<div class="header__line-product-2">
+							<img class="header__line-product-item-2" src="../assets/image/Search.svg" alt="Search">
+						</div>
+					</div>
+				</div>
+				<div class="header__line-location">
+					<div class="header__line-map-pin">
+						<img src="../assets/image/Map-pin.svg" alt="Map-pin">
+					</div>
+					<div class="header__line-city">
+						Москва
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+</div>
